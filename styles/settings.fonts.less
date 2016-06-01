@@ -5,7 +5,71 @@
   * @parent settings.less
   *
   * @description
-  * Fonts used in the application.
+  * Below are fonts used in the application.
   *
   * @demo ./templates/settings.fonts.html
 **/
+
+@url-fonts: './../fonts/';
+@light: 200;
+@regular: 400;
+@medium: 500;
+@bold: 700;
+
+
+// Nirmala UI
+
+// Regular
+@font-face {
+  font-family: 'Nirmala UI';
+  font-weight: @regular;
+  src: url('@{url-fonts}Nirmala.ttf') format('truetype');
+}
+
+// Bold
+@font-face {
+  font-family: 'Nirmala UI';
+  font-weight: @bold;
+  src: url('@{url-fonts}NirmalaB.ttf') format('truetype');
+}
+
+
+// Radikal W01
+
+// Medium
+@font-face {
+  font-family: 'Radikal W01';
+  font-weight: @medium;
+  src: url('@{url-fonts}RadikalW01-Medium.ttf') format('truetype');
+}
+
+
+// Roboto
+
+// Light
+@font-face {
+  font-family: 'Roboto';
+  font-weight: @light;
+  src: url('@{url-fonts}Roboto-Light.ttf') format('truetype');
+}
+
+// Regular
+@font-face {
+  font-family: 'Roboto';
+  font-weight: @regular;
+  src: url('@{url-fonts}Roboto-Regular.ttf') format('truetype');
+}
+
+// Medium
+@font-face {
+  font-family: 'Roboto';
+  font-weight: @medium;
+  src: url('@{url-fonts}Roboto-Medium.ttf') format('truetype');
+}
+
+// Bold
+@font-face {
+  font-family: 'Roboto';
+  font-weight: @bold;
+  src: url('@{url-fonts}Roboto-Bold.ttf') format('truetype');
+}
