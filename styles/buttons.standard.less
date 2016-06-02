@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/**
+  * @stylesheet buttons.standard.less Standard
+  * @parent styles.buttons
+  *
+  * @description
+  * All defined standard button styles and states belong here.
+  *
+  * @demo ./templates/buttons.standard.html
+**/
+
+.bt {
+  display: inline-block;
+  overflow: visible;
+
+  margin: 0;
+
+  border: none;
+  outline: none;
+  box-shadow: 0 0 18px fade(@color-blue-darkest, 22%);
+
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: @color-white;
+    text-decoration: none;
+  }
+}
+
+.bt--apply {
+  height: 84px;
+  padding: 0 122px;
+
+  background-color: @color-blue-bright;
+
+  &:hover,
+  &:active {
+    background-color: @color-blue-dark;
+  }
+}
+
+.bt--request {
+  height: 53px;
+  padding: 0 88px;
+
+  background-color: @color-blue-somber;
+
+  &:hover,
+  &:active {
+    background-color: @color-blue-bright;
+  }
+}
+
+.bt--request-quote {
+  height: 56px;
+  padding: 0 85px;
+
+  background-color: @color-blue-neutral;
+
+  &:hover,
+  &:active {
+    background-color: @color-blue-dark;
+  }
+}
+
+.bt--add {
+  height: 38px;
+  padding: 0 35px;
+
+  box-shadow: 0 0 18px fade(@color-gray-dark, 28%);
+
+  color: @color-gray-darkest;
+  background-color: @color-white;
+
+  font-size: 19px;
+
+  &:hover,
+  &:active {
+    color: @color-white;
+    background-color: @color-blue-light;
+  }
+}
+
+.bt--add--secondary {
+  height: 147px;
+  width: 258px;
+  padding: 0;
+
+  box-shadow: 0 0 68px fade(@color-gray-neutral, 20%);
+
+  color: @color-blue-neutral;
+  background-color: @color-white;
+
+  &:hover,
+  &:active {
+    border: 1px solid @color-gray-light;
+
+    color: @color-blue-neutral;
+  }
+}
