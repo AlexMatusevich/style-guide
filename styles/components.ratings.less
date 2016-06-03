@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/**
+  * @stylesheet components.ratings.less Ratings
+  * @parent styles.components
+  *
+  * @description
+  *
+  * @demo ./templates/components.ratings.html
+**/
+
+
+.ratings {
+  display: inline-block;
+
+  unicode-bidi: bidi-override;
+  direction: rtl;
+
+  vertical-align: middle;
+
+  font-size: 18px;
+
+  .ratings__star {
+    .icon--star--empty();
+
+    float: right;
+
+    width: 18px;
+    height: 18px;
+    padding-right: 5px;
+
+    color: @color-blue-neutral;
+
+    &:hover {
+      &,
+      & ~ .ratings__star {
+        .icon--star--full();
+      }
+    }
+  }
+
+  &:not(:hover) {
+    .ratings__star {
+      &.ratings__star--active {
+        &,
+        & ~ .ratings__star {
+          .icon--star--full();
+        }
+      }
+    }
+  }
+}
