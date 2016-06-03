@@ -1,6 +1,7 @@
 @page styles Styles
 @group styles.generic 1 Generic
-@group styles.settings 2 Settings
-@group styles.components 3 Components
+@group styles.icons 2 Icons
+@group styles.settings 3 Settings
+@group styles.components 4 Components
 
 This is Eleven James Styles.

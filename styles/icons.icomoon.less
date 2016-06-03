@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/**
+  * @stylesheet icons.icomoon.less IcoMoon
+  * @parent styles.icons
+  *
+  * @description
+  * Pixel Perfect Icon Solutions.
+  *
+  * @demo ./templates/icons.icomoon.html
+**/
+
+@font-face {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('@{url-fonts}icomoon.eot?1a2ec6');
+  src: url('@{url-fonts}icomoon.eot?1a2ec6#iefix') format('embedded-opentype'),
+       url('@{url-fonts}icomoon.ttf?1a2ec6') format('truetype'),
+       url('@{url-fonts}icomoon.woff?1a2ec6') format('woff'),
+       url('@{url-fonts}icomoon.svg?1a2ec6#icomoon') format('svg');
+}
+
+[class^="icon--"],
+[class*=" icon--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--star--empty::before {
+  content: "\e9d7";
+}
+
+.icon--star--half::before {
+  content: "\e9d8";
+}
+
+.icon--star--full::before {
+  content: "\e9d9";
+}
