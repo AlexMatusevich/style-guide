@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/**
+  * @stylesheet components.pagination.less Pagination
+  * @parent styles.components
+  *
+  * @description
+  *
+  * @demo ./templates/components.pagination.html
+**/
+
+
+.pagination {
+  display: inline-block;
+  overflow: hidden;
+
+  vertical-align: middle;
+
+  .pagination__page {
+    float: left;
+
+    width: 9px;
+    height: 9px;
+    margin: 9px/2;
+
+    border-radius: 9px/2;
+
+    background-color: @color-gray-medium;
+
+    &.pagination__page--active {
+      background-color: @color-white;
+    }
+  }
+}
