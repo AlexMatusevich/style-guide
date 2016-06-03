@@ -6,29 +6,31 @@
 
 // Example Section
 
-.example-section {
+.example {
   margin: 20px 20px 50px;
 
-  .example-heading {
+  .example__heading {
     color: @heading-color;
   }
 
-  .example-content {
+  .example__content {
     font-size: 16px;
 
-    .example-item {
+    .example__content__item {
       line-height: 30px;
     }
 
-    .example-swatch {
+    .example__content__swatch {
       display: inline-block;
 
       height: 20px;
       width: 20px;
 
-      border: 1px solid @color-black;
-
       vertical-align: middle;
+
+      &.example__content__swatch--bordered {
+        border: 1px solid @color-black;
+      }
     }
   }
 }
