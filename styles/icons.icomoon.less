@@ -22,8 +22,7 @@
        url('@{url-fonts}icomoon.svg?1a2ec6#icomoon') format('svg');
 }
 
-[class^="icon--"],
-[class*=" icon--"] {
+.icon() {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -38,14 +37,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon--star--empty::before {
-  content: "\e9d7";
+.icon--star--empty {
+  .icon();
+
+  &::before {
+    content: "\e9d7";
+  }
 }
 
-.icon--star--half::before {
-  content: "\e9d8";
+.icon--star--half {
+  .icon();
+
+  &::before {
+    content: "\e9d8";
+  }
 }
 
-.icon--star--full::before {
-  content: "\e9d9";
+.icon--star--full {
+  .icon();
+
+  &::before {
+    content: "\e9d9";
+  }
 }
