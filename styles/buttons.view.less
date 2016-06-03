@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/**
+  * @stylesheet buttons.view.less View
+  * @parent styles.buttons
+  *
+  * @description
+  *
+  * @demo ./templates/buttons.view.html
+**/
+
+.view-control {
+  display: inline-block;
+  overflow: visible;
+
+  margin: 0;
+
+  border: none;
+  outline: none;
+
+  vertical-align: middle;
+
+  font-family: "Nirmala UI", sans-serif;
+  font-weight: @regular;
+  font-size: 14pt;
+  line-height: 1;
+
+  &,
+  &:hover {
+    color: @color-black-light;
+    text-decoration: none;
+  }
+
+  .view-control__label {
+    text-align: right;
+    vertical-align: middle;
+
+    font-weight: @bold;
+  }
+
+  .view-control__options {
+    display: inline-block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: middle;
+
+    .view-control__option {
+      float: left;
+
+      height: 36px;
+      width: 36px;
+      margin-right: -1px;
+
+      border: 1px solid @color-gray-light;
+
+      list-style-type: none;
+      text-align: center;
+      cursor: pointer;
+
+      line-height: 36px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover,
+      &.view-control__option--active {
+        border-color: @color-blue-pure;
+
+        color: @color-blue-pure;
+
+        font-weight: @bold;
+
+        & + .view-control__option {
+          border-left-color: @color-blue-pure;
+        }
+      }
+
+      &.view-control__option--active {
+        cursor: default;
+      }
+    }
+  }
+}
