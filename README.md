@@ -1,6 +1,6 @@
 # style-guide
 
-Eleven James Style Guide
+Style Guide
 
 ## Setup & Run Guide
 - Install Git

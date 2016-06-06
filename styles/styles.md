@@ -5,4 +5,4 @@
 @group styles.settings 4 Settings
 @group styles.components 5 Components
 
-This is Eleven James Styles.
+Styles.
